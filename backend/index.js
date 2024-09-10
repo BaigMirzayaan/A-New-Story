@@ -5,10 +5,10 @@ import cors from "cors";
 const app = express();
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "avadakedavra",
-    database: "library_books_data"
+    host: "mysql-16ba2c6-a-new-story-db.g.aivencloud.com",
+    user: "avnadmin",
+    password: "AVNS_OvX3_Rb5bdOGmU6VwfZ",
+    database: "defaultdb"
 });
 
 app.use(express.json());
