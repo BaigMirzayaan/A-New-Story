@@ -4,11 +4,13 @@ import cors from "cors";
 
 const app = express();
 
-const db = mysql.createConnection({
-    host: "mysql-16ba2c6-a-new-story-db.g.aivencloud.com",
-    user: "avnadmin",
-    password: "AVNS_OvX3_Rb5bdOGmU6VwfZ",
-    database: "defaultdb"
+const connection = mysql.createConnection({
+    host: 'mysql-16ba2c6-a-new-story-db.g.aivencloud.com',
+    user: 'avnadmin',
+    password: 'AVNS_OvX3_Rb5bdOGmU6VwfZ',
+    database: 'defaultdb',
+    port: 21051,
+    connectTimeout: 10000 
 });
 
 app.use(express.json());
