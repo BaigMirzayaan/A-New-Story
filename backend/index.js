@@ -4,7 +4,7 @@ import cors from "cors";
 
 const app = express();
 
-const connection = mysql.createConnection({
+const db = mysql.createConnection({
     host: 'mysql-16ba2c6-a-new-story-db.g.aivencloud.com',
     user: 'avnadmin',
     password: 'AVNS_OvX3_Rb5bdOGmU6VwfZ',
