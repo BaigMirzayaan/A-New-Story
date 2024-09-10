@@ -8,7 +8,7 @@ const Books = ()  => {
     useEffect(() => {
         const fetchAllBooks = async () =>{
             try{
-                const res = await axios.get("http://localhost:8800/books")
+                const res = await axios.get("https://a-new-story-backend.onrender.com/books")
                 setBooks(res.data)
                 console.log(res)
             }catch(err){
@@ -20,7 +20,7 @@ const Books = ()  => {
 
     const handleDelete = async (id) =>{
         try{
-            await axios.delete("http://localhost:8800/books/" + id);
+            await axios.delete("https://a-new-story-backend.onrender.com/books/" + id);
             window.location.reload();
         }catch(err){
             console.log(err);
