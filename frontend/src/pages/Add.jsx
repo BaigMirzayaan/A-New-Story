@@ -21,7 +21,7 @@ const Add = ()  => {
         e.preventDefault()
 
         try{
-            await axios.post("http://localhost:8800/books", book)
+            await axios.post("https://a-new-story-backend.onrender.com/books", book)
             navigate("/")
         }catch(err){
             console.log(err)
