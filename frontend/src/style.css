@@ -1,0 +1,85 @@
+.App{
+    height: 100%;
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: wheat;
+    
+}
+
+.books{
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    background-color: white;
+}
+
+.book{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    background-color: rgb(85, 143, 150);
+    object-fit: cover;
+}
+
+.delete_button{
+    padding: 3px 6px;
+    border: 1px solid rgb(220, 138, 155);
+    color: crimson;
+    background-color: white;
+    cursor: pointer;
+}
+
+.update_button{
+    padding: 3px 6px;
+    border: 1px solid rgb(238, 189, 86);
+    color: rgb(220, 117, 20);
+    background-color: white;
+    cursor: pointer;
+}
+
+.add_button{
+    padding: 10px 20px; 
+    font-size: 18px; 
+    width: 180px; 
+    height: 40px; 
+    border-radius: 10px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(123, 184, 105);
+    color: rgb(63, 220, 20);
+    background-color: white;
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.update_save_button{
+    padding: 3px 6px;
+    background-color: orangered;
+    color: white;
+    border: 1px solid white;
+}
+
+.library_name{
+    margin-bottom: 70px;
+}
