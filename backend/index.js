@@ -3,6 +3,7 @@ import mysql from "mysql2";
 import cors from "cors";
 
 const app = express();
+const port = process.env.PORT || 4000;
 
 const db = mysql.createConnection({
     host: 'mysql-16ba2c6-a-new-story-db.g.aivencloud.com',
